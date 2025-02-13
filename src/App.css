@@ -200,21 +200,18 @@ header p {
   scroll-snap-align: start;
   border-radius: 8px;
   overflow: hidden;
-  width: 100%;
-  max-width: 300px;
-  aspect-ratio: 4 / 5; /* Maintain consistent aspect ratio */
 }
 
 .carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* Ensure full image is visible without being cut */
+  width: auto;
+  height: auto;
+  object-fit: contain; /* Full image visible in its original size */
 }
 
 @media (max-width: 600px) {
   .carousel-item {
-    max-width: 100%; /* Full width for mobile */
-    aspect-ratio: 4 / 5; /* Maintain aspect ratio on mobile */
+    max-width: 100%;
+    height: auto;
   }
 }
 
